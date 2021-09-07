@@ -1,0 +1,27 @@
+<!-- <t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Name" modifiers="htmlentities" enable-dedit="false" />-->
+<div class="mentorWrapper contentItem" id="id<t4 type='meta' meta='content_id' />" data-position-default="ZoneA" data-position-selected="ZoneA">
+<h1 id="pageTitle"><t4 type="content" name="First Name" output="normal" modifiers="striptags,htmlentities" /> <t4 type="content" name="Last Name" output="normal" modifiers="striptags,htmlentities" /></h1>
+  <article class="mentorBioWrapper standardContent">  
+    <div class="mentorBioSummaryWrapper">
+      <div class="mentorBioPhoto">
+        <t4 type='content' name='Photo' output='image' alt-element='name' />  
+      </div>
+      <p class="mentorBioSummary">
+        <t4 type="content" name="Job Title" output="selective-output" format="<strong>Job Title: </strong> $value" /><br>
+        <t4 type="content" name="Company" output="selective-output" format="<strong>Company: </strong> $value" /><br>
+        <t4 type="content" name="Industry" output="selective-output" process-format="true" format="<strong>Industry: </strong>$value" /><br>
+        <t4 type="content" name="Mentor Since" output="selective-output" process-format="true" format="<strong>Mentor Since: </strong>$value" /><br>
+        <t4 type="content" name="Will Mentor" output="selective-output" process-format="true" format="<strong>Will Mentor: </strong>$value" /> <br>
+        <t4 type="content" name="LinkedIn Profile Link" output="selective-output" process-format="true" format="<a href=&quot;<t4 type='content' name='LinkedIn Profile Link' output='normal' modifiers='striptags,htmlentities' />&quot; target=&quot;_blank&quot;><span class=&quot;fab fa-linkedin&quot; aria-hidden=&quot;true&quot;></span> profile</a>" />
+      </p>
+    </div>
+    <t4 type="content" name="Job Description" output="selective-output" process-format="true" format="<h3>Job Description</h3><p>$value</p>" />  
+    <t4 type="content" name="Company Description" output="selective-output" process-format="true" format="<h3>Company Description</h3><p>$value</p>" /> 
+    <t4 type="content" name="Employment History" output="selective-output" modifiers="medialibrary,nav_sections" process-format="true" format="<h3>Employment History</h3><p>$value</p>" />  
+    <t4 type="content" name="Education" output="selective-output" modifiers="medialibrary,nav_sections" process-format="true" format="<h3>Education</h3><p>$value</p>" />
+    <t4 type="content" name="Civic Involvement" output="selective-output" modifiers="medialibrary,nav_sections" process-format="true" format="<h3>Civic Involvement</h3><p>$value</p>" />
+    <t4 type="content" name="Mentoring Objectives and Scope" output="selective-output" modifiers="medialibrary,nav_sections" process-format="true" format="<h3>Mentoring Objectives & Scope</h3><p>$value</p>" />  
+    <t4 type="content" name="When and where do you hold meetings with your " output="selective-output" modifiers="medialibrary,nav_sections" process-format="true" format="<h3>When and where do you hold meetings with your students?</h3><p>$value</p>" />
+    <t4 type="content" name="Additional Information" output="selective-output" modifiers="medialibrary,nav_sections" process-format="true" format="<h3>Additional Information</h3><p>$value</p>" />
+  </article>  
+</div>
