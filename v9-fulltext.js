@@ -319,6 +319,17 @@ try {
 
 
 
+    /***
+    *  Industry
+    * 
+    * */
+       let industryString = (mentorDict.industry.content) ?
+       '<strong>Job Title: </strong>' + mentorDict.industry.content + '<br>' :
+       '<span class="industry d-none hidden visually-hidden">No company entered</span>';
+
+
+
+
    /***
     *  Description
     * 
