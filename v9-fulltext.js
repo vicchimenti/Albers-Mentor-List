@@ -352,6 +352,17 @@ try {
 
 
 
+    /***
+    *  Student Type
+    * 
+    * */
+    let studentTypeString = (mentorDict.studentType.content) ?
+    '<strong>Job Title: </strong>' + mentorDict.studentType.content + '<br>' :
+    '<span class="studentType d-none hidden visually-hidden">No studentType entered</span>';
+
+
+
+
    /***
     *  Description
     * 
