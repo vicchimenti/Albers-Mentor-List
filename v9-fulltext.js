@@ -275,7 +275,18 @@ try {
     *  Set wrapper
     * 
     * */
-   let beginningHTML = (mentorDict.firstName.content && mentorDict.lastName.content) ?
+   let beginningHTML = (mentorDict.contentId.content) ?
+        '<div class="mentorWrapper" id="' + mentorDict.contentId.content + '" data-position-default="ZoneA" data-position-selected="ZoneA">' :
+        '<div class="mentorWrapper hidden visually-hidden">';
+
+
+
+
+    /***
+    *  Set wrapper
+    * 
+    * */
+   let nameString = (mentorDict.firstName.content && mentorDict.lastName.content) ?
         '<h1 id="pageTitle">' + mentorDict.firstName.content + ' ' + mentorDict.lastName.content + '</h1>' :
         (mentorDict.fullName.content) ?
         '<h1 id="pageTitle">' + mentorDict.fullName.content + '</h1>' :
@@ -286,6 +297,7 @@ try {
         (mentorDict.contentName.content) ?
         '<h1 id="pageTitle">' + mentorDict.contentName.content + '</h1>' :
         '<span class="hidden visually-hidden">No valid name entered</span>';
+
 
 
 
