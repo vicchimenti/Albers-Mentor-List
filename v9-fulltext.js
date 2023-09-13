@@ -243,7 +243,6 @@ try {
        contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
        firstName: getContentValues('<t4 type="content" name="First Name" output="normal" modifiers="striptags,htmlentities" />'),
        lastName: getContentValues('<t4 type="content" name="Last Name" output="normal" modifiers="striptags,htmlentities" />'),
-       imageId: getContentValues('<t4 type="content" name="Image ID" output="normal" modifiers="striptags,htmlentities" />'),
        jobTitle: getContentValues('<t4 type="content" name="Job Title" output="normal" modifiers="striptags,htmlentities" />'),
        company: getContentValues('<t4 type="content" name="Company" output="normal" modifiers="striptags,htmlentities" />'),
        industry: getContentValues('<t4 type="content" name="Industry" output="normal" modifiers="striptags,htmlentities" />'),
@@ -274,7 +273,7 @@ try {
        willMentor: getContentValues('<t4 type="content" name="Will Mentor" output="normal" display_field="value" />'),
 
 
-       mediaFile: getContentValues('<t4 type="content" name="Media File" output="normal" formatter="path/*" />'),
+       imageId: getContentValues('<t4 type="content" name="Image ID" output="normal" modifiers="striptags,htmlentities" />'),
        photo: getContentValues('<t4 type="content" name="Photo" output="image" alt="name" />'),
        
 
