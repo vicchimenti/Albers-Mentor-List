@@ -265,7 +265,7 @@ try {
 
        objectives: getContentValues('<t4 type="content" name="Mentoring Objectives and Scope" output="normal" modifiers="medialibrary,nav_sections" />'),
 
-       yourMeetings: getContentValues('<t4 type="content" name="When and where do you hold meetings with your " output="normal" modifiers="medialibrary,nav_sections" />'),
+       whenAndWhere: getContentValues('<t4 type="content" name="When and where do you hold meetings with your " output="normal" modifiers="medialibrary,nav_sections" />'),
 
        additionalInfo: getContentValues('<t4 type="content" name="Additional Information" output="normal" modifiers="medialibrary,nav_sections" />'),
 
@@ -276,6 +276,8 @@ try {
        photo: getContentValues('<t4 type="content" name="Photo" output="image" alt="name" />'),
        
        willMentor: getContentValues('<t4 type="content" name="Will Mentor" output="normal" display_field="value" />'),
+
+       yourMeetings: getContentValues('<t4 type="content" name="Your Meetings" output="normal" modifiers="medialibrary,nav_sections" />'),
 
        lastModified: getContentValues('<t4 type="meta" meta="last_modified" format="EEEE, MMMM d, yyyy" />'),
        anchor: getContentValues('<t4 type="meta" meta="html_anchor" />'),
