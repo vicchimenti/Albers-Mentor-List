@@ -410,7 +410,6 @@ try {
            mentorSinceString,
            studentTypeString,
            linkedInString,
-
            closeSummary,
            closeSummaryWrapper,
 
