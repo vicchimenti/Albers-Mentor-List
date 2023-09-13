@@ -359,6 +359,17 @@ try {
 
 
 
+    /***
+    *  Mentoring Objectives
+    * 
+    * */
+    let objectivesString = (mentorDict.objectives.content) ?
+            '<h3>Civic Involvement</h3><p>' + mentorDict.objectives.content + '</p>' :
+            '<span class="objectives d-none hidden visually-hidden">No objectives entered</span>';
+
+
+
+
 
 
 
@@ -414,6 +425,7 @@ try {
            employmentHistoryString,
            educationString,
            civicInvolvementString,
+           objectivesString,
 
            closeArticle,
            endingHTML
