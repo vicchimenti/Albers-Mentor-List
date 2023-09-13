@@ -310,6 +310,18 @@ try {
 
 
     /***
+    *  Student Type
+    * 
+    * */
+    let studentTypeString = (mentorDict.studentType.content) ?
+        '<strong>Will Mentor: </strong>' + mentorDict.studentType.content + '<br>' :
+        (mentorDict.willMentor.content) ? assignList(mentorDict.willMentor.content) :
+        '<span class="studentType d-none hidden visually-hidden">No studentType entered</span>';
+
+
+
+
+    /***
     *  LinkedIn Profile
     * 
     * */
@@ -320,14 +332,7 @@ try {
 
 
 
-    /***
-    *  Student Type
-    * 
-    * */
-    let studentTypeString = (mentorDict.studentType.content) ?
-    '<strong>Will Mentor: </strong>' + mentorDict.studentType.content + '<br>' :
-    (mentorDict.willMentor.content) ? assignList(mentorDict.willMentor.content) :
-    '<span class="studentType d-none hidden visually-hidden">No studentType entered</span>';
+
 
 
 
