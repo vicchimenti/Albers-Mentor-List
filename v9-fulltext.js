@@ -281,7 +281,7 @@ try {
     * 
     * */
    let companyString = (mentorDict.company.content) ?
-   '<strong>Job Title: </strong>' + mentorDict.company.content + '<br>' :
+   '<strong>Company: </strong>' + mentorDict.company.content + '<br>' :
    '<span class="company d-none hidden visually-hidden">No company entered</span>';
 
 
@@ -292,7 +292,7 @@ try {
     * 
     * */
     let industryString = (mentorDict.industry.content) ?
-       '<strong>Job Title: </strong>' + mentorDict.industry.content + '<br>' :
+       '<strong>Industry: </strong>' + mentorDict.industry.content + '<br>' :
        '<span class="industry d-none hidden visually-hidden">No industry entered</span>';
 
 
@@ -303,7 +303,7 @@ try {
     * 
     * */
     let mentorSinceString = (mentorDict.mentorSince.content) ?
-    '<strong>Job Title: </strong>' + mentorDict.mentorSince.content + '<br>' :
+    '<strong>Mentor Since: </strong>' + mentorDict.mentorSince.content + '<br>' :
     '<span class="mentorSince d-none hidden visually-hidden">No mentor time entered</span>';
 
 
@@ -314,7 +314,7 @@ try {
     * 
     * */
     let linkedInString = (mentorDict.linkedIn.content) ?
-        '<strong>Job Title: </strong>' + mentorDict.linkedIn.content + '<br>' :
+        '<a href="' + mentorDict.linkedIn.content + '" target="_blank" title="LinkedIn Profile"><span class="fab fa-linkedin" aria-hidden="true"></span> Profile</a>' :
         '<span class="linkedIn d-none hidden visually-hidden">No LinkedIn profile entered</span>';
 
 
@@ -325,7 +325,7 @@ try {
     * 
     * */
     let studentTypeString = (mentorDict.studentType.content) ?
-    '<strong>Job Title: </strong>' + mentorDict.studentType.content + '<br>' :
+    '<strong>Will Mentor: </strong>' + mentorDict.studentType.content + '<br>' :
     (mentorDict.willMentor.content) ? assignList(mentorDict.willMentor.content) :
     '<span class="studentType d-none hidden visually-hidden">No studentType entered</span>';
 
