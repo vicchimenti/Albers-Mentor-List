@@ -36,7 +36,10 @@
     *  Set defaults
     * 
     * */
-    let endingHTML = '</div></article>';
+    let endingHTML = '</div>';
+    let openArticle = '<article class="mentorBioWrapper standardContent">';
+    let closeArticle = '</article>';
+    
     let openRow = '<div class="row g-0 px-0 mx-0">';
     let closeRow = '</div>';
     let openHeader = '<div class="card-header border-0 bg-transparent">';
