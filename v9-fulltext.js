@@ -10,7 +10,7 @@
 *
 *     Document will write once when the page loads
 *
-*     @version 8.1.4
+*     @version 8.1.5
 */
 
 
@@ -142,8 +142,10 @@
        let info = new ImageInfo();
        info.setInput(media);
 
+        //    Until the alt descriptions are updated, use the name
+
        let imageHTML = (info.check()) ?
-           '<figure class="figure"><img src="' + mediaPath + '" class="figure-img img-fluid" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" /></figure>' :
+           '<figure class="figure"><img src="' + mediaPath + '" class="figure-img img-fluid" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getName() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" /></figure>' :
            '<figure class="d-none hidden visually-hidden"><span class="class="visually-hidden hidden">Invalid Image ID</span></figure>';
 
        return imageHTML;
