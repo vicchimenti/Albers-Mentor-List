@@ -249,8 +249,9 @@ try {
        imageId: getContentValues('<t4 type="content" name="Image ID" output="normal" modifiers="striptags,htmlentities" />'),
 
        jobTitle: getContentValues('<t4 type="content" name="Job Title" output="normal" modifiers="striptags,htmlentities" />'),
+
+       company: getContentValues('<t4 type="content" name="Company" output="normal" modifiers="striptags,htmlentities" />'),
        
-       articleFullBody: getContentValues('<t4 type="content" name="Full Article" output="normal" modifiers="medialibrary,nav_sections" />'),
        topics: getContentValues('<t4 type="content" name="Topics" output="normal" modifiers="striptags,htmlentities" />'),
        linkSource: getContentValues('<t4 type="content" name="Link" output="linkurl" modifiers="nav_sections" />'),
        linkText: getContentValues('<t4 type="content" name="Link" output="linktext" modifiers="nav_sections" />'),
