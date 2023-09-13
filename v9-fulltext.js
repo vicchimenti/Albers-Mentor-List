@@ -386,7 +386,7 @@ try {
     * 
     * */
     let additionalInfoString = (mentorDict.additionalInfo.content) ?
-            '<h3>Mentoring Objectives & Scope</h3><p>' + mentorDict.additionalInfo.content + '</p>' :
+            '<h3>Additional Information</h3><p>' + mentorDict.additionalInfo.content + '</p>' :
             '<span class="additionalInfo d-none hidden visually-hidden">No objectives entered</span>';
 
 
