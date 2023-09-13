@@ -429,7 +429,9 @@ try {
            openImageWrapper,
 
            closeImageWrapper,
+           openSummary,
 
+           closeSummary,
            closeSummaryWrapper,
 
            closeArticle,
