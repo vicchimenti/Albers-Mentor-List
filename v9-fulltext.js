@@ -288,7 +288,7 @@ try {
     let studentTypeString = (mentorDict.studentType.content) ?
         '<strong>Will Mentor: </strong>' + mentorDict.studentType.content + '<br>' :
         (mentorDict.willMentor.content) ? assignList(mentorDict.willMentor.content) :
-        '<span class="studentType d-none hidden visually-hidden">No studentType entered</span>';
+        '<span class="studentType d-none hidden visually-hidden">No student type entered</span>';
 
 
 
@@ -321,7 +321,7 @@ try {
     * */
    let companyDescriptionString = (mentorDict.companyDescription.content) ?
         '<h3>Company Description</h3><p>' + mentorDict.companyDescription.content + '</p>' :
-        '<span class="companyDescription d-none hidden visually-hidden">No job description entered</span>';
+        '<span class="companyDescription d-none hidden visually-hidden">No company description entered</span>';
 
 
 
@@ -332,7 +332,7 @@ try {
     * */
     let employmentHistoryString = (mentorDict.employmentHistory.content) ?
        '<h3>Employment History</h3><p>' + mentorDict.employmentHistory.content + '</p>' :
-       '<span class="employmentHistory d-none hidden visually-hidden">No job description entered</span>';
+       '<span class="employmentHistory d-none hidden visually-hidden">No employment history entered</span>';
 
 
 
@@ -342,8 +342,19 @@ try {
     * 
     * */
     let educationString = (mentorDict.education.content) ?
-            '<h3>Employment History</h3><p>' + mentorDict.education.content + '</p>' :
-            '<span class="education d-none hidden visually-hidden">No job description entered</span>';
+            '<h3>Education</h3><p>' + mentorDict.education.content + '</p>' :
+            '<span class="education d-none hidden visually-hidden">No education entered</span>';
+
+
+
+
+    /***
+    *  Civic Involvement
+    * 
+    * */
+    let civicInvolvementString = (mentorDict.civicInvolvement.content) ?
+            '<h3>Civic Involvement</h3><p>' + mentorDict.civicInvolvement.content + '</p>' :
+            '<span class="civicInvolvement d-none hidden visually-hidden">No civic involvement entered</span>';
 
 
 
