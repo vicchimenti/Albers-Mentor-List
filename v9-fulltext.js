@@ -337,6 +337,17 @@ try {
 
 
 
+    /***
+    *  Education
+    * 
+    * */
+    let educationString = (mentorDict.education.content) ?
+            '<h3>Employment History</h3><p>' + mentorDict.education.content + '</p>' :
+            '<span class="education d-none hidden visually-hidden">No job description entered</span>';
+
+
+
+
 
 
 
@@ -390,6 +401,7 @@ try {
            jobDescriptionString,
            companyDescriptionString,
            employmentHistoryString,
+           educationString,
 
            closeArticle,
            endingHTML
