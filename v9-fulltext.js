@@ -160,24 +160,6 @@
 
 
 
-    /***
-     *      Returns a formatted html a href file download tag
-     */
-    function mediaTag(itemId) {
-
-       let mediaPath = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="media" formatter="path/*" id="' + itemId + '" />');
-       let mediaInfo = getMediaInfo(itemId);
-
-       let mediaHTML = (mediaInfo) ?
-           '<span class="card-text"><a class="mediaDownload card-link" href="' + mediaPath + '" title="Download the full document: ' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" download>' + mediaInfo.getName() + '</a></span>' :
-           null;
-
-       return mediaHTML;
-    }
-
-
-
-
    /***
      *      Returns a formatted html img tag
      */
