@@ -45,6 +45,7 @@
     let closeImageWrapper = '</div>';
     let openSummary = '<p class="mentorBioSummary">';
     let closeSummary = '</p>';
+    let background = '<div class="standardContent"><h2>Background</h2></div>';
 
 
 
@@ -412,6 +413,7 @@ try {
            linkedInString,
            closeSummary,
            closeSummaryWrapper,
+           background,
 
            closeArticle,
            endingHTML
