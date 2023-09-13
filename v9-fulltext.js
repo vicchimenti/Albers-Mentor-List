@@ -312,9 +312,9 @@ try {
     *  Company
     * 
     * */
-   let jobTitleString = (mentorDict.jobTitle.content) ?
-   '<strong>Job Title: </strong>' + mentorDict.jobTitle.content + '<br>' :
-   '<span class="jobTitle d-none hidden visually-hidden">No job title entered</span>';
+   let companyString = (mentorDict.company.content) ?
+   '<strong>Job Title: </strong>' + mentorDict.company.content + '<br>' :
+   '<span class="company d-none hidden visually-hidden">No company entered</span>';
 
 
 
