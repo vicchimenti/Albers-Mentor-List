@@ -323,9 +323,20 @@ try {
     *  Industry
     * 
     * */
-       let industryString = (mentorDict.industry.content) ?
+    let industryString = (mentorDict.industry.content) ?
        '<strong>Job Title: </strong>' + mentorDict.industry.content + '<br>' :
-       '<span class="industry d-none hidden visually-hidden">No company entered</span>';
+       '<span class="industry d-none hidden visually-hidden">No industry entered</span>';
+
+
+
+
+    /***
+    *  Mentor Since
+    * 
+    * */
+    let mentorSinceString = (mentorDict.mentorSince.content) ?
+    '<strong>Job Title: </strong>' + mentorDict.mentorSince.content + '<br>' :
+    '<span class="mentorSince d-none hidden visually-hidden">No mentor time entered</span>';
 
 
 
