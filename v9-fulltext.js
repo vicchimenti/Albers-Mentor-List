@@ -104,42 +104,6 @@
 
 
 
-   /***
-    *      Returns an array of list items
-    */
-    function assignLinkList(arrayOfValues) {
-
-       let listValues = '';
-       for (let i = 0; i < arrayOfValues.length; i++) {
-
-           if (arrayOfValues[i]) {
-
-               listValues += '<li class="linkListItem list-group-item d-inline p-0 pe-md-4">' + arrayOfValues[i] + '</li>';
-           }
-       }
-
-       return listValues;
-    }
-
-
-
-
-   /***
-    *      Parses array values for null
-    */
-    function parseArray(rawValues) {
-
-       let results = [];
-       for (let value in rawValues) {
-
-           if (rawValues[value]) results.push(rawValues[value]);
-       }
-
-       return results;
-    }
-
-
-
 
     /***
      *      Returns a media object
