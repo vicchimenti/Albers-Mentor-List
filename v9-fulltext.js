@@ -43,6 +43,8 @@
     let closeSummaryWrapper = '</div>';
     let openImageWrapper = '<div class="mentorBioPhoto">';
     let closeImageWrapper = '</div>';
+    let openSummary = '<p class="mentorBioSummary">';
+    let closeSummary = '</p>';
 
 
     let openRow = '<div class="row g-0 px-0 mx-0">';
