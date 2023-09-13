@@ -316,12 +316,23 @@ try {
 
 
     /***
-    *  Job Description
+    *  Company Description
     * 
     * */
    let companyDescriptionString = (mentorDict.companyDescription.content) ?
-   '<h3>Company Description</h3><p>' + mentorDict.companyDescription.content + '</p>' :
-   '<span class="companyDescription d-none hidden visually-hidden">No job description entered</span>';
+        '<h3>Company Description</h3><p>' + mentorDict.companyDescription.content + '</p>' :
+        '<span class="companyDescription d-none hidden visually-hidden">No job description entered</span>';
+
+
+
+
+    /***
+    *  Employment History
+    * 
+    * */
+    let employmentHistoryString = (mentorDict.employmentHistory.content) ?
+       '<h3>Employment History</h3><p>' + mentorDict.employmentHistory.content + '</p>' :
+       '<span class="employmentHistory d-none hidden visually-hidden">No job description entered</span>';
 
 
 
@@ -378,6 +389,7 @@ try {
            background,
            jobDescriptionString,
            companyDescriptionString,
+           employmentHistoryString,
 
            closeArticle,
            endingHTML
