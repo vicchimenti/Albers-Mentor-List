@@ -386,32 +386,6 @@ try {
         '<span class="articleImage d-none hidden visually-hidden">No valid image provided</span>';
 
 
-
-
-
-
-   /***
-    *  Parse and format list items
-    * 
-    * */
-   let topicString = (mentorDict.topics.content) ?
-       assignList(mentorDict.topics.content) :
-       '<span class="knowledgeBaseItem tags d-none hidden visually-hidden">No Topics Provided</span>';
-
-
-
-
-   /***
-    *  format content and pdf links
-    * 
-    * */
-   let linkArray = [contentLinkString, mediaFileString];
-   let linkList = parseArray(linkArray);
-   let formattedLinkList = assignLinkList(linkList);
-   let linkString = (formattedLinkList) ?
-       '<ul class="linkList d-flex flex-column flex-md-row justify-content-start p-0 m-0">' + formattedLinkList + '</ul>' :
-       '<span class="linkList d-none hidden visually-hidden">No Links</span>';
-    
    
    
 
