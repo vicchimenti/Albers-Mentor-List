@@ -376,6 +376,8 @@ try {
     * */
     let yourMeetingsString = (mentorDict.yourMeetings.content) ?
             '<h3>When and where do you hold meetings with your students?</h3><p>' + mentorDict.yourMeetings.content + '</p>' :
+            (mentorDict.whenAndWhere.content) ?
+            '<h3>When and where do you hold meetings with your students?</h3><p>' + mentorDict.whenAndWhere.content + '</p>' :
             '<span class="yourMeetings d-none hidden visually-hidden">No meetings info entered</span>';
 
 
@@ -437,6 +439,7 @@ try {
            educationString,
            civicInvolvementString,
            objectivesString,
+           yourMeetingsString,
 
            closeArticle,
            endingHTML
