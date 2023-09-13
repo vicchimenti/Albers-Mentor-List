@@ -253,8 +253,9 @@ try {
        company: getContentValues('<t4 type="content" name="Company" output="normal" modifiers="striptags,htmlentities" />'),
 
        industry: getContentValues('<t4 type="content" name="Industry" output="normal" modifiers="striptags,htmlentities" />'),
-       
-       linkSource: getContentValues('<t4 type="content" name="Link" output="linkurl" modifiers="nav_sections" />'),
+
+       mentorSince: getContentValues('<t4 type="content" name="Mentor Since" output="normal" modifiers="striptags,htmlentities" />'),
+
        linkText: getContentValues('<t4 type="content" name="Link" output="linktext" modifiers="nav_sections" />'),
        mediaFile: getContentValues('<t4 type="content" name="Media File" output="normal" formatter="path/*" />'),
        fullTextLink: getContentValues('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />'),
