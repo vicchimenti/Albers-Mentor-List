@@ -273,13 +273,13 @@ try {
     * */
    let beginningHTML = (mentorDict.contentId.content) ?
         '<div class="mentorWrapper" id="' + mentorDict.contentId.content + '" data-position-default="ZoneA" data-position-selected="ZoneA">' :
-        '<div class="mentorWrapper hidden visually-hidden">';
+        '<div class="d-none mentorWrapper hidden visually-hidden">';
 
 
 
 
     /***
-    *  Set wrapper
+    *  Name String
     * 
     * */
    let nameString = (mentorDict.firstName.content && mentorDict.lastName.content) ?
@@ -292,21 +292,29 @@ try {
         '<h1 id="pageTitle">' + mentorDict.lastName.content + '</h1>' :
         (mentorDict.contentName.content) ?
         '<h1 id="pageTitle">' + mentorDict.contentName.content + '</h1>' :
-        '<span class="hidden visually-hidden">No valid name entered</span>';
-
-
-
+        '<span class="d-none hidden visually-hidden">No valid name entered</span>';
 
 
 
 
    /***
-    *  Description
+    *  Job Title
     * 
     * */
-   let descriptionString = (mentorDict.articleDescription.content) ?
-       '<p class="articleDescription card-text">' + mentorDict.articleDescription.content + '</p>' :
-       '<span class="articleDescription d-none hidden visually-hidden">No description entered</span>';
+   let jobTitleString = (mentorDict.jobTitle.content) ?
+        '<strong>Job Title: </strong>' + mentorDict.jobTitle.content + '<br>' :
+        '<span class="jobTitle d-none hidden visually-hidden">No job title entered</span>';
+
+
+
+
+    /***
+    *  Company
+    * 
+    * */
+   let jobTitleString = (mentorDict.jobTitle.content) ?
+   '<strong>Job Title: </strong>' + mentorDict.jobTitle.content + '<br>' :
+   '<span class="jobTitle d-none hidden visually-hidden">No job title entered</span>';
 
 
 
