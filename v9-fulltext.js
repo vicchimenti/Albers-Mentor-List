@@ -326,7 +326,7 @@ try {
     * */
     let studentTypeString = (mentorDict.studentType.content) ?
     '<strong>Job Title: </strong>' + mentorDict.studentType.content + '<br>' :
-    (mentorDict.willMentor.content)
+    (mentorDict.willMentor.content) ? assignList(mentorDict.willMentor.content) :
     '<span class="studentType d-none hidden visually-hidden">No studentType entered</span>';
 
 
