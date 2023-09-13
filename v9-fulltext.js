@@ -199,7 +199,6 @@ try {
        willMentor: getContentValues('<t4 type="content" name="Will Mentor" output="normal" display_field="value" />'),
        imageId: getContentValues('<t4 type="content" name="Image ID" output="normal" modifiers="striptags,htmlentities" />'),
        photo: getContentValues('<t4 type="content" name="Photo" output="image" alt="name" />'),
-       lastModified: getContentValues('<t4 type="meta" meta="last_modified" format="EEEE, MMMM d, yyyy" />'),
        anchor: getContentValues('<t4 type="meta" meta="html_anchor" />'),
        contentId: getContentValues('<t4 type="meta" meta="content_id" />')
 
@@ -343,13 +342,7 @@ try {
 
 
 
-   /***
-    *  Format Last Modified
-    * 
-    * */
-   let lastModifiedString = (mentorDict.lastModified.content) ?
-         '<div class="lastModified"><p class="text-muted">Last Modified: <em>' + mentorDict.lastModified.content + '</em></p></div>' :
-         '<span class="lastModified d-none hidden visually-hidden">No Last Modified Date Found</span>';
+
 
 
 
