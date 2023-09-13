@@ -181,20 +181,6 @@
 
 
 
-   /***
-    *  Body wrapper funtion
-    *  wrappers are updated when there is no image
-    * 
-    * */
-    function processBodyWrapper() {
-
-       openImageWrapper = '<div class="knowledgeImage d-none hidden visually-hidden">';
-       openDescriptionWrapper = '<div class="descriptionWrapper col-xs-12 col-md-12">';
-    }
-
-
-
-
     /***
      *      Write the document
      */
