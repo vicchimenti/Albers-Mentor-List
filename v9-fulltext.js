@@ -354,24 +354,6 @@ try {
 
 
 
-   /***
-    *  Establish h1
-    *  allow editors to hide the fulltext link when no full body exists
-    * 
-    * */
-    let titleLink = (mentorDict.articleTitle.content) ?
-       '<h1 class="card-title">' + mentorDict.articleTitle.content + '</h1>' :
-       '<h1 class="card-title">' + mentorDict.contentName.content + '</h1>';
-
-
-
-
-   /***
-    *  Process Media Library PDF File
-    * 
-    * */
-    let mediaFileId = (mentorDict.mediaFile.content) ? content.get('Media File').getID() : null;
-    let mediaFileString = (mediaFileId) ? mediaTag(mediaFileId) : null;
 
 
 
