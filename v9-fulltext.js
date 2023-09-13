@@ -243,6 +243,7 @@ try {
        contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
        firstName: getContentValues('<t4 type="content" name="First Name" output="normal" modifiers="striptags,htmlentities" />'),
        lastName: getContentValues('<t4 type="content" name="Last Name" output="normal" modifiers="striptags,htmlentities" />'),
+       fullName:getContentValues('<t4 type="content" name="Full Name" output="normal" modifiers="striptags,htmlentities" />'),
        jobTitle: getContentValues('<t4 type="content" name="Job Title" output="normal" modifiers="striptags,htmlentities" />'),
        company: getContentValues('<t4 type="content" name="Company" output="normal" modifiers="striptags,htmlentities" />'),
        industry: getContentValues('<t4 type="content" name="Industry" output="normal" modifiers="striptags,htmlentities" />'),
@@ -274,7 +275,9 @@ try {
     *  Set wrapper
     * 
     * */
-   let beginningHTML = (mentorDict.articleTitle.content) ?
+   let beginningHTML = (mentorDict.firstName.content && mentorDict.lastName.content) ?
+        '<h1 id="pageTitle">' + mentorDict.firstName.content + '</h1>' :
+
        '<article class="knowledgeArticleItem card border-start border-top-0 border-bottom-0 border-end-0" aria-label="' + mentorDict.articleTitle.content + '" id="ka' + mentorDict.contentId.content + '"><div class="knowledgeItem standardContent">' :
        '<article class="knowledgeArticleItem card border-start border-top-0 border-bottom-0 border-end-0" aria-label="' + mentorDict.contentName.content + '" id="ka' + mentorDict.contentId.content + '"><div class="knowledgeItem standardContent">' ;
 
