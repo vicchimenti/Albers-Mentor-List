@@ -238,7 +238,7 @@ try {
    /***
     *      Dictionary of content
     * */
-   let knowledgeDict = {
+   let mentorDict = {
 
        contentName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
        articleTitle: getContentValues('<t4 type="content" name="Article Title" output="normal" modifiers="striptags,htmlentities" />'),
@@ -263,9 +263,9 @@ try {
     *  Set wrapper
     * 
     * */
-   let beginningHTML = (knowledgeDict.articleTitle.content) ?
-       '<article class="knowledgeArticleItem card border-start border-top-0 border-bottom-0 border-end-0" aria-label="' + knowledgeDict.articleTitle.content + '" id="ka' + knowledgeDict.contentId.content + '"><div class="knowledgeItem standardContent">' :
-       '<article class="knowledgeArticleItem card border-start border-top-0 border-bottom-0 border-end-0" aria-label="' + knowledgeDict.contentName.content + '" id="ka' + knowledgeDict.contentId.content + '"><div class="knowledgeItem standardContent">' ;
+   let beginningHTML = (mentorDict.articleTitle.content) ?
+       '<article class="knowledgeArticleItem card border-start border-top-0 border-bottom-0 border-end-0" aria-label="' + mentorDict.articleTitle.content + '" id="ka' + mentorDict.contentId.content + '"><div class="knowledgeItem standardContent">' :
+       '<article class="knowledgeArticleItem card border-start border-top-0 border-bottom-0 border-end-0" aria-label="' + mentorDict.contentName.content + '" id="ka' + mentorDict.contentId.content + '"><div class="knowledgeItem standardContent">' ;
 
 
 
@@ -274,8 +274,8 @@ try {
     *  Description
     * 
     * */
-   let descriptionString = (knowledgeDict.articleDescription.content) ?
-       '<p class="articleDescription card-text">' + knowledgeDict.articleDescription.content + '</p>' :
+   let descriptionString = (mentorDict.articleDescription.content) ?
+       '<p class="articleDescription card-text">' + mentorDict.articleDescription.content + '</p>' :
        '<span class="articleDescription d-none hidden visually-hidden">No description entered</span>';
 
 
@@ -285,8 +285,8 @@ try {
     *  Description
     * 
     * */
-   let fullBodyString = (knowledgeDict.articleFullBody.content) ?
-   '<div class="articleFullbody card-text">' + knowledgeDict.articleFullBody.content + '</div>' :
+   let fullBodyString = (mentorDict.articleFullBody.content) ?
+   '<div class="articleFullbody card-text">' + mentorDict.articleFullBody.content + '</div>' :
    '<span class="articleFullbody d-none hidden visually-hidden">No content entered</span>';
 
 
@@ -296,8 +296,8 @@ try {
     *  Subtitle subhead
     * 
     * */
-   let subtitleString = (knowledgeDict.articleSubtitle.content) ?
-       '<p class="articleSubtitle card-text"><strong>' + knowledgeDict.articleSubtitle.content + '</strong></p>' :
+   let subtitleString = (mentorDict.articleSubtitle.content) ?
+       '<p class="articleSubtitle card-text"><strong>' + mentorDict.articleSubtitle.content + '</strong></p>' :
        '<span class="articleSubtitle d-none hidden visually-hidden">No subtitle entered</span>';
 
 
@@ -307,8 +307,8 @@ try {
     *  Section/Content Link
     * 
     * */
-   let contentLinkString = (knowledgeDict.linkSource.content && knowledgeDict.linkText.content) ?
-       '<span class="externalLink card-text"><a href="' + knowledgeDict.linkSource.content + '" class="card-link" title="Visit the site: ' + knowledgeDict.linkText.content + '" target="_blank">' + knowledgeDict.linkText.content + '</a></span>' :
+   let contentLinkString = (mentorDict.linkSource.content && mentorDict.linkText.content) ?
+       '<span class="externalLink card-text"><a href="' + mentorDict.linkSource.content + '" class="card-link" title="Visit the site: ' + mentorDict.linkText.content + '" target="_blank">' + mentorDict.linkText.content + '</a></span>' :
        null;
    
 
@@ -318,8 +318,8 @@ try {
     *  Format Last Modified
     * 
     * */
-   let lastModifiedString = (knowledgeDict.lastModified.content) ?
-         '<div class="lastModified"><p class="text-muted">Last Modified: <em>' + knowledgeDict.lastModified.content + '</em></p></div>' :
+   let lastModifiedString = (mentorDict.lastModified.content) ?
+         '<div class="lastModified"><p class="text-muted">Last Modified: <em>' + mentorDict.lastModified.content + '</em></p></div>' :
          '<span class="lastModified d-none hidden visually-hidden">No Last Modified Date Found</span>';
 
 
@@ -330,9 +330,9 @@ try {
     *  allow editors to hide the fulltext link when no full body exists
     * 
     * */
-    let titleLink = (knowledgeDict.articleTitle.content) ?
-       '<h1 class="card-title">' + knowledgeDict.articleTitle.content + '</h1>' :
-       '<h1 class="card-title">' + knowledgeDict.contentName.content + '</h1>';
+    let titleLink = (mentorDict.articleTitle.content) ?
+       '<h1 class="card-title">' + mentorDict.articleTitle.content + '</h1>' :
+       '<h1 class="card-title">' + mentorDict.contentName.content + '</h1>';
 
 
 
@@ -341,7 +341,7 @@ try {
     *  Process Media Library PDF File
     * 
     * */
-    let mediaFileId = (knowledgeDict.mediaFile.content) ? content.get('Media File').getID() : null;
+    let mediaFileId = (mentorDict.mediaFile.content) ? content.get('Media File').getID() : null;
     let mediaFileString = (mediaFileId) ? mediaTag(mediaFileId) : null;
 
 
@@ -351,7 +351,7 @@ try {
     *  Process Image
     * 
     * */
-   let imageFileId = (knowledgeDict.articleImage.content) ? content.get('Image').getID() : null;
+   let imageFileId = (mentorDict.articleImage.content) ? content.get('Image').getID() : null;
    let imageMarkup = (imageFileId) ? imageTag(imageFileId) : null;
    let imageString = imageMarkup || '<span class="articleImage d-none hidden visually-hidden">No valid image provided</span>';
    if (!imageMarkup) { processBodyWrapper(); }
@@ -364,8 +364,8 @@ try {
     *  Parse and format list items
     * 
     * */
-   let topicString = (knowledgeDict.topics.content) ?
-       assignList(knowledgeDict.topics.content) :
+   let topicString = (mentorDict.topics.content) ?
+       assignList(mentorDict.topics.content) :
        '<span class="knowledgeBaseItem tags d-none hidden visually-hidden">No Topics Provided</span>';
 
 
