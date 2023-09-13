@@ -20,7 +20,6 @@
 
 
 
-
     /***
      *      Import T4 Utilities
      */
@@ -46,7 +45,6 @@
     let openSummary = '<p class="mentorBioSummary">';
     let closeSummary = '</p>';
     let background = '<div class="standardContent"><h2>Background</h2></div>';
-
 
 
 
@@ -78,7 +76,7 @@
 
 
     /***
-     *        Returns a formatted list
+     *        Returns a formatted string from a list
      */
     function assignList(tags) {
 
