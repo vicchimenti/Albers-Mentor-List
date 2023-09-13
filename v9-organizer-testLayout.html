@@ -1,0 +1,15 @@
+<!-- <t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="" modifiers="htmlentities" enable-dedit="false" />-->
+<div class="mentorSummaryWrapper col-xs-12 col-sm-6 col-md-4" id="id<t4 type='meta' meta='content_id' />">
+  <div class="mentorSummary standardContent">
+    <h3>
+      <a href="<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Name' modifiers='striptags,htmlentities' />"><t4 type='content' name='First Name' output='normal' modifiers='striptags,htmlentities' /> <t4 type='content' name='Last Name' output='normal' modifiers='striptags,htmlentities' /></a>
+    </h3>
+    <p>
+      <t4 type="content" name="Job Title" output="selective-output" format="<strong>Job Title: </strong> $value" /><br>
+      <t4 type="content" name="Company" output="selective-output" format="<strong>Company: </strong> $value" /><br>
+      <t4 type="content" name="Industry" output="selective-output" process-format="true" format="<strong>Industry: </strong>$value" /><br>
+      <t4 type="content" name="Mentor Since" output="selective-output" process-format="true" format="<strong>Mentor Since: </strong>$value" /><br>
+      <t4 type="content" name="Student Type" output="selective-output" modifiers="striptags,htmlentities,nl2br" format="<strong>Will Mentor: </strong>$value" />
+    </p>
+  </div>
+</div>
