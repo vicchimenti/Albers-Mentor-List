@@ -83,13 +83,22 @@
 
        let arrayofTags = tags.split(',');
        let listValues = '';
+       let openList = '<strong>Will Mentor: </strong>';
+       let closeList = '<br>';
 
        for (let tag = 0; tag < arrayofTags.length; tag++) {
-           
-           listValues += '<li class="tag">' + arrayofTags[tag].trim() + '</li>';
+
+            if (tag === 0  || tag === (arrayofTags.length-1)) {
+
+                listValues +=  '' + arrayofTags[tag].trim() + '';
+
+            } else {
+
+                listValues +=  '' + arrayofTags[tag].trim() + ', ';
+            }  
        }
 
-       return '<div class="knowledgeBaseItem tags"><ul class="categories">' + listValues + '</ul></div>';
+       return (openList + listValues + closeList);
     }
 
 
