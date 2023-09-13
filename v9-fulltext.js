@@ -383,6 +383,17 @@ try {
 
 
 
+    /***
+    *  Additional Information
+    * 
+    * */
+    let additionalInfoString = (mentorDict.additionalInfo.content) ?
+            '<h3>Mentoring Objectives & Scope</h3><p>' + mentorDict.additionalInfo.content + '</p>' :
+            '<span class="additionalInfo d-none hidden visually-hidden">No objectives entered</span>';
+
+
+
+
 
 
 
@@ -440,7 +451,7 @@ try {
            civicInvolvementString,
            objectivesString,
            yourMeetingsString,
-
+           additionalInfoString,
            closeArticle,
            endingHTML
        ]
