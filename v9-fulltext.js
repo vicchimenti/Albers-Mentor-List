@@ -47,18 +47,6 @@
     let closeSummary = '</p>';
 
 
-    let openRow = '<div class="row g-0 px-0 mx-0">';
-    let closeRow = '</div>';
-    let openHeader = '<div class="card-header border-0 bg-transparent">';
-    let closeHeader = '</div>';
-    let openBody = '<div class="card-body">';
-    let closeBody = '</div>';
-    let openFooter = '<div class="card-footer border-0 bg-transparent">';
-    let closeFooter = '</div>';
-    let openDescriptionWrapper = '<div class="descriptionWrapper col-xs-12 col-md-8">';
-    let closeDescriptionWrapper = '</div>';
-    let horizontalRule = '<hr class="articleBorderBottom">';
-
 
 
 
@@ -435,27 +423,7 @@ try {
    writeDocument(
        [
            beginningHTML,
-           openHeader,
-           titleLink,
-           closeHeader,
-           openBody,
-           openRow,
-           openImageWrapper,
-           imageString,
-           closeImageWrapper,
-           openDescriptionWrapper,
-           subtitleString,
-           descriptionString,
-           closeDescriptionWrapper,
-           closeRow,
-           closeBody,
-           openFooter,
-           linkString,
-           topicString,
-           lastModifiedString,
-           horizontalRule,
-           fullBodyString,
-           closeFooter,
+
            endingHTML
        ]
    );
