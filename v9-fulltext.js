@@ -251,8 +251,9 @@ try {
        jobTitle: getContentValues('<t4 type="content" name="Job Title" output="normal" modifiers="striptags,htmlentities" />'),
 
        company: getContentValues('<t4 type="content" name="Company" output="normal" modifiers="striptags,htmlentities" />'),
+
+       industry: getContentValues('<t4 type="content" name="Industry" output="normal" modifiers="striptags,htmlentities" />'),
        
-       topics: getContentValues('<t4 type="content" name="Topics" output="normal" modifiers="striptags,htmlentities" />'),
        linkSource: getContentValues('<t4 type="content" name="Link" output="linkurl" modifiers="nav_sections" />'),
        linkText: getContentValues('<t4 type="content" name="Link" output="linktext" modifiers="nav_sections" />'),
        mediaFile: getContentValues('<t4 type="content" name="Media File" output="normal" formatter="path/*" />'),
