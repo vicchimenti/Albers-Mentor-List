@@ -41,6 +41,9 @@
     let closeArticle = '</article>';
     let openSummaryWrapper = '<div class="mentorBioSummaryWrapper">';
     let closeSummaryWrapper = '</div>';
+    let openImageWrapper = '<div class="mentorBioPhoto">';
+    let closeImageWrapper = '</div>';
+
 
     let openRow = '<div class="row g-0 px-0 mx-0">';
     let closeRow = '</div>';
@@ -50,8 +53,6 @@
     let closeBody = '</div>';
     let openFooter = '<div class="card-footer border-0 bg-transparent">';
     let closeFooter = '</div>';
-    let openImageWrapper = '<div class="knowledgeImage col-xs-12 col-md-4">';
-    let closeImageWrapper = '</div>';
     let openDescriptionWrapper = '<div class="descriptionWrapper col-xs-12 col-md-8">';
     let closeDescriptionWrapper = '</div>';
     let horizontalRule = '<hr class="articleBorderBottom">';
