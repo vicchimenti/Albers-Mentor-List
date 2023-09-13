@@ -189,9 +189,9 @@
        let info = new ImageInfo();
        info.setInput(media);
 
-       let mediaHTML = (info.check()) ?
-           '<figure class="figure"><img src="' + mediaPath + '" class="articleImage figure-img img-fluid" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" /></figure>' :
-           '<figure class="d-none hidden visually-hidden"><span class="class="articleImage visually-hidden hidden">Invalid Image ID</span></figure>';
+       let imageHTML = (info.check()) ?
+           '<figure class="figure"><img src="' + mediaPath + '" class="figure-img img-fluid" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" /></figure>' :
+           '<figure class="d-none hidden visually-hidden"><span class="class="visually-hidden hidden">Invalid Image ID</span></figure>';
 
        return imageHTML;
     }
