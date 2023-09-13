@@ -310,35 +310,17 @@ try {
 
 
    /***
-    *  Description
+    *  Job Description
     * 
     * */
-   let fullBodyString = (mentorDict.articleFullBody.content) ?
-   '<div class="articleFullbody card-text">' + mentorDict.articleFullBody.content + '</div>' :
-   '<span class="articleFullbody d-none hidden visually-hidden">No content entered</span>';
+   let jobDescriptionString = (mentorDict.jobDescription.content) ?
+        '<h3>Job Description</h3><p>' + mentorDict.jobDescription.content + '</p>' :
+        '<span class="jobDescription d-none hidden visually-hidden">No job description entered</span>';
 
 
 
 
-   /***
-    *  Subtitle subhead
-    * 
-    * */
-   let subtitleString = (mentorDict.articleSubtitle.content) ?
-       '<p class="articleSubtitle card-text"><strong>' + mentorDict.articleSubtitle.content + '</strong></p>' :
-       '<span class="articleSubtitle d-none hidden visually-hidden">No subtitle entered</span>';
 
-
-
-
-   /***
-    *  Section/Content Link
-    * 
-    * */
-   let contentLinkString = (mentorDict.linkSource.content && mentorDict.linkText.content) ?
-       '<span class="externalLink card-text"><a href="' + mentorDict.linkSource.content + '" class="card-link" title="Visit the site: ' + mentorDict.linkText.content + '" target="_blank">' + mentorDict.linkText.content + '</a></span>' :
-       null;
-   
 
 
 
@@ -389,6 +371,7 @@ try {
            closeSummary,
            closeSummaryWrapper,
            background,
+           jobDescriptionString,
 
            closeArticle,
            endingHTML
