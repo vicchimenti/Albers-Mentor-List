@@ -341,6 +341,17 @@ try {
 
 
 
+    /***
+    *  LinkedIn Profile
+    * 
+    * */
+    let linkedInString = (mentorDict.linkedIn.content) ?
+        '<strong>Job Title: </strong>' + mentorDict.linkedIn.content + '<br>' :
+        '<span class="linkedIn d-none hidden visually-hidden">No LinkedIn profile entered</span>';
+
+
+
+
    /***
     *  Description
     * 
