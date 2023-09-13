@@ -423,7 +423,16 @@ try {
    writeDocument(
        [
            beginningHTML,
+           nameString,
+           openArticle,
+           openSummaryWrapper,
+           openImageWrapper,
 
+           closeImageWrapper,
+
+           closeSummaryWrapper,
+
+           closeArticle,
            endingHTML
        ]
    );
