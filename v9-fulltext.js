@@ -431,8 +431,11 @@ try {
            closeImageWrapper,
            openSummary,
            jobTitleString,
-
-
+           companyString,
+           industryString,
+           mentorSinceString,
+           studentTypeString,
+           linkedInString,
 
            closeSummary,
            closeSummaryWrapper,
