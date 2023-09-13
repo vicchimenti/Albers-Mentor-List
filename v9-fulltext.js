@@ -413,6 +413,7 @@ try {
            companyDescriptionString,
            employmentHistoryString,
            educationString,
+           civicInvolvementString,
 
            closeArticle,
            endingHTML
