@@ -381,7 +381,7 @@ try {
     *  Process Image
     * 
     * */
-   let imageFileId = (mentorDict.articleImage.content) ? content.get('Image').getID() : null;
+   let imageFileId = (mentorDict.imageId.content) ? content.get('Image').getID() : null;
    let imageMarkup = (imageFileId) ? imageTag(imageFileId) : null;
    let imageString = imageMarkup || '<span class="articleImage d-none hidden visually-hidden">No valid image provided</span>';
    if (!imageMarkup) { processBodyWrapper(); }
