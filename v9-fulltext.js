@@ -10,7 +10,7 @@
 *
 *     Document will write once when the page loads
 *
-*     @version 8.1.1
+*     @version 8.1.2
 */
 
 
@@ -394,18 +394,6 @@ try {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
    /***
     *  Process Image
     * 
@@ -415,8 +403,6 @@ try {
         (mentorDict.photo.content) ?
         '' + mentorDict.photo.content + '' :
         '<span class="articleImage d-none hidden visually-hidden">No valid image provided</span>';
-
-
    
    
 
