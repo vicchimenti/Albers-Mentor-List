@@ -447,6 +447,9 @@ try {
            imageString,
            closeImageWrapper,
            openSummary,
+           jobTitleString,
+
+
 
            closeSummary,
            closeSummaryWrapper,
