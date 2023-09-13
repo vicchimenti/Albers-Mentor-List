@@ -358,6 +358,7 @@ try {
     * */
     let studentTypeString = (mentorDict.studentType.content) ?
     '<strong>Job Title: </strong>' + mentorDict.studentType.content + '<br>' :
+    (mentorDict.willMentor.content)
     '<span class="studentType d-none hidden visually-hidden">No studentType entered</span>';
 
 
@@ -439,13 +440,6 @@ try {
         '' + mentorDict.photo.content + '' :
         '<span class="articleImage d-none hidden visually-hidden">No valid image provided</span>';
 
-
-   let imageFileId = (mentorDict.imageId.content) ? content.get('Image').getID() : null;
-
-   let imageFileID
-   let imageMarkup = (imageFileId) ? imageTag(imageFileId) : null;
-   let imageString = imageMarkup || '<span class="articleImage d-none hidden visually-hidden">No valid image provided</span>';
-   if (!imageMarkup) { processBodyWrapper(); }
 
 
 
