@@ -1,19 +1,16 @@
   /***
 *     @author Victor Chimenti, MSCS
 *     @file v9-fulltext.js
-*           Knowledge Base
-*           ID: 5555
+*           Albers Mentor List
+*           ID: 364
 *           v9/fulltext
-*
-*     This new content type is a generic knowledge base article that can be used
-*     in a variety of environments that require tagged/filterable content.
 *
 *     This content type will work in conjunction with the Organizer Zone-A
 *     and each item will contain one searchable, article.
 *
 *     Document will write once when the page loads
 *
-*     @version 7.4.3
+*     @version 8.0
 */
 
 
