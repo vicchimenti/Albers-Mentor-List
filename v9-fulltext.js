@@ -276,10 +276,18 @@ try {
     * 
     * */
    let beginningHTML = (mentorDict.firstName.content && mentorDict.lastName.content) ?
+        '<h1 id="pageTitle">' + mentorDict.firstName.content + ' ' + mentorDict.lastName.content + '</h1>' :
+        (mentorDict.fullName.content) ?
+        '<h1 id="pageTitle">' + mentorDict.fullName.content + '</h1>' :
+        (mentorDict.firstName.content) ?
         '<h1 id="pageTitle">' + mentorDict.firstName.content + '</h1>' :
+        (mentorDict.lastName.content) ?
+        '<h1 id="pageTitle">' + mentorDict.lastName.content + '</h1>' :
+        (mentorDict.contentName.content) ?
+        '<h1 id="pageTitle">' + mentorDict.contentName.content + '</h1>' :
+        '<span class="hidden visually-hidden">No valid name entered</span>';
 
-       '<article class="knowledgeArticleItem card border-start border-top-0 border-bottom-0 border-end-0" aria-label="' + mentorDict.articleTitle.content + '" id="ka' + mentorDict.contentId.content + '"><div class="knowledgeItem standardContent">' :
-       '<article class="knowledgeArticleItem card border-start border-top-0 border-bottom-0 border-end-0" aria-label="' + mentorDict.contentName.content + '" id="ka' + mentorDict.contentId.content + '"><div class="knowledgeItem standardContent">' ;
+
 
 
 
