@@ -364,8 +364,19 @@ try {
     * 
     * */
     let objectivesString = (mentorDict.objectives.content) ?
-            '<h3>Civic Involvement</h3><p>' + mentorDict.objectives.content + '</p>' :
+            '<h3>Mentoring Objectives & Scope</h3><p>' + mentorDict.objectives.content + '</p>' :
             '<span class="objectives d-none hidden visually-hidden">No objectives entered</span>';
+
+
+
+
+    /***
+    *  Your Meetings
+    * 
+    * */
+    let yourMeetingsString = (mentorDict.yourMeetings.content) ?
+            '<h3>When and where do you hold meetings with your students?</h3><p>' + mentorDict.yourMeetings.content + '</p>' :
+            '<span class="yourMeetings d-none hidden visually-hidden">No meetings info entered</span>';
 
 
 
