@@ -193,7 +193,7 @@
            '<figure class="figure"><img src="' + mediaPath + '" class="articleImage figure-img img-fluid" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" /></figure>' :
            '<figure class="d-none hidden visually-hidden"><span class="class="articleImage visually-hidden hidden">Invalid Image ID</span></figure>';
 
-       return mediaHTML;
+       return imageHTML;
     }
 
 
@@ -382,6 +382,8 @@ try {
     * 
     * */
    let imageFileId = (mentorDict.imageId.content) ? content.get('Image').getID() : null;
+
+   let imageFileID
    let imageMarkup = (imageFileId) ? imageTag(imageFileId) : null;
    let imageString = imageMarkup || '<span class="articleImage d-none hidden visually-hidden">No valid image provided</span>';
    if (!imageMarkup) { processBodyWrapper(); }
