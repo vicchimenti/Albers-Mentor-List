@@ -77,7 +77,7 @@
 
 
     /***
-     *        Returns a formatted unordered list
+     *        Returns a formatted list
      */
     function assignList(tags) {
 
@@ -100,7 +100,6 @@
 
        return (openList + listValues + closeList);
     }
-
 
 
 
