@@ -4,9 +4,9 @@
       <a href="<t4 type='content' name='Name' output='fulltext' use-element='true' filename-element='Name' modifiers='striptags,htmlentities' />"><t4 type='content' name='First Name' output='normal' modifiers='striptags,htmlentities' /> <t4 type='content' name='Last Name' output='normal' modifiers='striptags,htmlentities' /></a>
     </h3>
     <p>
-      <t4 type="content" name="Job Title" output="selective-output" format="<strong>Job Title: </strong> $value" /><br>
-      <t4 type="content" name="Company" output="selective-output" format="<strong>Company: </strong> $value" /><br>
-      <t4 type="content" name="Industry" output="selective-output" process-format="true" format="<strong>Industry: </strong>$value" /><br>
+      <t4 type="content" name="Job Title" output="selective-output" format="<strong>Job Title: </strong><span class='jobTitle'>$value</span>" /><br>
+      <t4 type="content" name="Company" output="selective-output" format="<strong>Company: </strong><span class='company'>$value</span>" /><br>
+      <t4 type="content" name="Industry" output="selective-output" process-format="true" format="<strong>Industry: </strong><span class='industry'>$value</span>" /><br>
       <t4 type="content" name="Mentor Since" output="selective-output" process-format="true" format="<strong>Mentor Since: </strong><span class='mentorSince'>$value</span>" /><br>
       <t4 type="content" name="Student Type" output="selective-output" modifiers="striptags,htmlentities,nl2br" format="<strong>Will Mentor: </strong><span class='studentType'>$value</span>" />
     </p>
