@@ -12,3 +12,19 @@
       padding: 30px 15px;
       margin: 0;
   }
+
+  #filterFieldWrapper{
+    margin: 0 10px 10px 10px;
+  }
+  #filterField{
+      padding: 0;
+      border: 0;
+      border-top: 0;
+  }
+  .hideByTextbox, .hideByDropdown {
+      display: none;
+  }
+  .noResultsToShow{
+      padding: 30px 15px;
+      margin: 0;
+  }
