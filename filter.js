@@ -25,7 +25,7 @@ $(function () {
 $(function () {
 	$('#selectbox').quicksearch('div.mentorSummaryWrapper', {
 		'delay': 100,
-		'selector': 'p',
+		'selector': 'span.studentType',
 		'bind': 'change',
     'prepareQuery': function (val) {
 			return new RegExp(val, "i");
