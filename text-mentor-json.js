@@ -8,6 +8,7 @@ try {
     var photoid = processTags('<t4 type="content" name="Image ID" output="normal" modifiers="striptags,htmlentities" />');
 
     var list = {};
+    list['articleTitle'] = processTags('<t4 type="content" name="Article Title" output="normal" modifiers="striptags,htmlentities" />');
     list['contentID'] = processTags('<t4 type="meta" meta="content_id" />');
     list['firstName'] = processTags('<t4 type="content" name="First Name" output="normal" modifiers="striptags,htmlentities" />');
     list['lastName'] = processTags('<t4 type="content" name="Last Name" output="normal" modifiers="striptags,htmlentities" />');
