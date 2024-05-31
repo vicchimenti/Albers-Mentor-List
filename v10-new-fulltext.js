@@ -96,6 +96,34 @@ function assignMentee(tags) {
 
 
 /***
+ *        Returns a formatted string from a list
+ */
+function assignMentor(tags) {
+
+    let arrayofTags = tags.split(',');
+    let listValues = '';
+    let openList = '<strong>Mentor Type: </strong>';
+    let closeList = '<br>';
+
+    for (let tag = 0; tag < arrayofTags.length; tag++) {
+
+        if (tag === 0  || tag === (arrayofTags.length-1)) {
+
+            listValues +=  '' + arrayofTags[tag].trim() + '';
+
+        } else {
+
+            listValues +=  '' + arrayofTags[tag].trim() + ', ';
+        }  
+    }
+
+    return (openList + listValues + closeList);
+}
+
+
+
+
+/***
  *      Returns a media object
  */
 function getMediaInfo(mediaID) {
@@ -286,7 +314,7 @@ let studentTypeString = (mentorDict.menteeType.content) ?
 * 
 * */
 let mentorTypeString = (mentorDict.mentorType.content) ?
-    '<strong>Mentor Type: </strong>' + mentorDict.mentorType.content + '<br>' :
+    assignMentor(mentorDict.mentorType.content) :
     '<span class="mentorType d-none hidden visually-hidden">No mentor type entered</span>';
 
 
