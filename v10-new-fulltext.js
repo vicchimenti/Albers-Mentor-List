@@ -175,6 +175,7 @@ let mentorDict = {
     lastName: getContentValues('<t4 type="content" name="Last Name" output="normal" modifiers="striptags,htmlentities" />'),
     fullName:getContentValues('<t4 type="content" name="Full Name" output="normal" modifiers="striptags,htmlentities" />'),
     mentorType: getContentValues('<t4 type="content" name="Mentor Type" output="normal" display_field="value" />'),
+    menteeType: getContentValues('<t4 type="content" name="Mentee Type" output="normal" display_field="value" />'),
     jobTitle: getContentValues('<t4 type="content" name="Job Title" output="normal" modifiers="striptags,htmlentities" />'),
     company: getContentValues('<t4 type="content" name="Company" output="normal" modifiers="striptags,htmlentities" />'),
     industry: getContentValues('<t4 type="content" name="Industry" output="normal" modifiers="striptags,htmlentities" />'),
