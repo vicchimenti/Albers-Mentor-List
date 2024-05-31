@@ -297,17 +297,6 @@ let studentTypeString = (mentorDict.menteeType.content) ?
 
 
 
-/***
-*  Legacy Student Type
-* 
-* */
-// let studentTypeString = (mentorDict.studentType.content) ?
-//     '<strong>Will Mentor: </strong>' + mentorDict.studentType.content + '<br>' :
-//     (mentorDict.willMentor.content) ? assignMentee(mentorDict.willMentor.content) :
-//     '<span class="studentType d-none hidden visually-hidden">No student type entered</span>';
-
-
-
 
 /***
 *  Mentor Type
