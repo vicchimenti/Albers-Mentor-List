@@ -21,7 +21,6 @@ try {
     list['photoUrl'] = processTags('<t4 type="media" id="' + photoid + '" formatter="path/*" />');
     list['photoAlt'] = processTags('<t4 type="media" id="' + photoid + '" formatter="image/description" />');
     list['link'] = processTags('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />');
-    list['link'] = processTags('<t4 type="content" name="Name" output="fulltext" use-element="true" filename-element="Name" modifiers="striptags,htmlentities" />');
 
     var jsonObj = new org.json.JSONObject(list);
     document.write(jsonObj.toString() + ',');
