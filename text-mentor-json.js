@@ -19,8 +19,8 @@ try {
     list['mentorSince'] = processTags('<t4 type="content" name="Mentor Since" output="normal" modifiers="striptags,htmlentities" />');
     list['studentType'] = processTags('<t4 type="content" name="Mentee Type" output="normal" display_field="value" />').replace(/,\s*/g, '|').replace(/\//g, ', ');
 
-    <t4 type="content" name="Mentee Type" output="normal" display_field="value" />
-    list['studentType'] = processTags('<t4 type="content" name="Student Type" output="normal" modifiers="striptags,htmlentities" />').replace(/,\s*/g, '|').replace(/\//g, ', ');
+    // <t4 type="content" name="Mentee Type" output="normal" display_field="value" />
+    // list['studentType'] = processTags('<t4 type="content" name="Student Type" output="normal" modifiers="striptags,htmlentities" />').replace(/,\s*/g, '|').replace(/\//g, ', ');
     list['photoUrl'] = processTags('<t4 type="media" id="' + photoid + '" formatter="path/*" />');
     list['photoAlt'] = processTags('<t4 type="media" id="' + photoid + '" formatter="image/description" />');
     list['link'] = processTags('<t4 type="content" name="Article Title" output="fulltext" use-element="true" filename-element="Article Title" modifiers="striptags,htmlentities" />');
