@@ -70,7 +70,7 @@ function processTags(t4Tag) {
 /***
  *        Returns a formatted string from a list
  */
-function assignList(tags) {
+function assignMentee(tags) {
 
     let arrayofTags = tags.split(',');
     let listValues = '';
@@ -263,9 +263,8 @@ let mentorSinceString = (mentorDict.mentorSince.content) ?
 *  Student Type
 * 
 * */
-let studentTypeString = (mentorDict.studentType.content) ?
-    '<strong>Will Mentor: </strong>' + mentorDict.studentType.content + '<br>' :
-    (mentorDict.willMentor.content) ? assignList(mentorDict.willMentor.content) :
+let studentTypeString = (mentorDict.menteeType.content) ?
+    assignMentee(mentorDict.menteeType.content) :
     '<span class="studentType d-none hidden visually-hidden">No student type entered</span>';
 
 
@@ -276,7 +275,7 @@ let studentTypeString = (mentorDict.studentType.content) ?
 * */
 // let studentTypeString = (mentorDict.studentType.content) ?
 //     '<strong>Will Mentor: </strong>' + mentorDict.studentType.content + '<br>' :
-//     (mentorDict.willMentor.content) ? assignList(mentorDict.willMentor.content) :
+//     (mentorDict.willMentor.content) ? assignMentee(mentorDict.willMentor.content) :
 //     '<span class="studentType d-none hidden visually-hidden">No student type entered</span>';
 
 
