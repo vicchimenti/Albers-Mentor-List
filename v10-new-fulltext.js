@@ -79,14 +79,23 @@ function assignMentee(tags) {
 
     for (let tag = 0; tag < arrayofTags.length; tag++) {
 
-        if (tag === 0  || tag === (arrayofTags.length-1)) {
+        if (arrayofTags.length > 1) {
 
-            listValues +=  '' + arrayofTags[tag].trim() + '';
+            if (tag === (arrayofTags.length-1)) {
+
+                listValues +=  '' + arrayofTags[tag].trim() + '';
+    
+            } else {
+    
+                listValues +=  '' + arrayofTags[tag].trim() + ', ';
+            }  
 
         } else {
 
-            listValues +=  '' + arrayofTags[tag].trim() + ', ';
-        }  
+            listValues +=  '' + arrayofTags[tag].trim() + '';
+
+        }
+
     }
 
     return (openList + listValues + closeList);
@@ -107,14 +116,23 @@ function assignMentor(tags) {
 
     for (let tag = 0; tag < arrayofTags.length; tag++) {
 
-        if (tag === 0  || tag === (arrayofTags.length-1)) {
+        if (arrayofTags.length > 1) {
 
-            listValues +=  '' + arrayofTags[tag].trim() + '';
+            if (tag === (arrayofTags.length-1)) {
+
+                listValues +=  '' + arrayofTags[tag].trim() + '';
+    
+            } else {
+    
+                listValues +=  '' + arrayofTags[tag].trim() + ', ';
+            }  
 
         } else {
 
-            listValues +=  '' + arrayofTags[tag].trim() + ', ';
-        }  
+            listValues +=  '' + arrayofTags[tag].trim() + '';
+
+        }
+
     }
 
     return (openList + listValues + closeList);
