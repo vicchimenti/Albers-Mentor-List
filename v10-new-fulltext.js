@@ -205,7 +205,9 @@ let mentorDict = {
 *  Name String
 * 
 * */
-let nameString = (mentorDict.firstName.content && mentorDict.lastName.content) ?
+let nameString = (mentorDict.articleTitle.content) ?
+    '<h1 class="h2">' + mentorDict.articleTitle.content + '</h1>' :
+    (mentorDict.firstName.content && mentorDict.lastName.content) ?
     '<h1 class="h2">' + mentorDict.firstName.content + ' ' + mentorDict.lastName.content + '</h1>' :
     '<span class="d-none hidden visually-hidden">No valid name entered</span>';
 
