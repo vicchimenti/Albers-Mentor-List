@@ -6,7 +6,7 @@ $categoryFilters = array('studentType', 'mentorType');
 <section class="su-listing">
     <div id="searchoptionsGeneric" role="search" class="su-listing--form-wrapper bg--dark global-padding--8x" data-t4-ajax-group="courseSearch">
         <div class="grid-container">
-            <h2 class="h3">Mentors</h2>
+            <h2 class="h3">Albers Mentors</h2>
         </div>
         <form>
             <div class="cell medium-6 large-4">
