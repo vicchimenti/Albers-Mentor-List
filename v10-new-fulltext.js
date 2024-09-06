@@ -434,8 +434,6 @@ let additionalInfoString = (mentorDict.additionalInfo.content) ?
 * */
 let imageString = (mentorDict.imageId.content) ?
     imageTag(mentorDict.imageId.content) :
-    (mentorDict.photo.content) ?
-    '' + mentorDict.photo.content + '' :
     '<span class="articleImage d-none hidden visually-hidden">No valid image provided</span>';
 
 
