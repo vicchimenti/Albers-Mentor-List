@@ -237,7 +237,7 @@ let mentorDict = {
     yourMeetings: getContentValues('<t4 type="content" name="Your Meetings" output="normal" modifiers="medialibrary,nav_sections" />'),
     whenAndWhere: getContentValues('<t4 type="content" name="When and where do you hold meetings with your " output="normal" modifiers="medialibrary,nav_sections" />'),
     studentType: getContentValues('<t4 type="content" name="Student Type" output="normal" modifiers="striptags,htmlentities" />'),
-    willMentor: getContentValues('<t4 type="content" name="Will Mentor" output="normal" display_field="value" />'),
+    // willMentor: getContentValues('<t4 type="content" name="Will Mentor" output="normal" display_field="value" />'),
     imageId: getContentValues('<t4 type="content" name="Image ID" output="normal" modifiers="striptags,htmlentities" />'),
     anchor: getContentValues('<t4 type="meta" meta="html_anchor" />'),
     contentId: getContentValues('<t4 type="meta" meta="content_id" />')
