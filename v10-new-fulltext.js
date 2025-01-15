@@ -184,7 +184,7 @@ function imageTag(itemId) {
 
     let imageHTML = (info.check()) ?
         '<figure class="aspect-ratio-frame"><img src="' + mediaPath + '" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getName() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" /></figure>' :
-        '<figure class="d-none hidden visually-hidden"><span class="class="visually-hidden hidden">Invalid Image ID</span></figure>';
+        '<figure class="d-none hidden visually-hidden"><span class="class="visually-hidden hidden"> Invalid Image ID </span></figure>';
 
     return imageHTML;
 }
