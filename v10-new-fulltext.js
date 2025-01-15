@@ -253,7 +253,7 @@ let nameString = (mentorDict.articleTitle.content) ?
     '<h1 class="h2">' + mentorDict.articleTitle.content + '</h1>' :
     (mentorDict.firstName.content && mentorDict.lastName.content) ?
     '<h1 class="h2">' + mentorDict.firstName.content + ' ' + mentorDict.lastName.content + '</h1>' :
-    '<span class="d-none hidden visually-hidden">No valid name entered</span>';
+    '<span class="d-none hidden visually-hidden"> No valid name entered </span>';
 
 
 
@@ -264,7 +264,7 @@ let nameString = (mentorDict.articleTitle.content) ?
 * */
 let jobTitleString = (mentorDict.jobTitle.content) ?
     '<strong>Job Title: </strong>' + mentorDict.jobTitle.content + '<br>' :
-    '<span class="jobTitle d-none hidden visually-hidden">No job title entered</span>';
+    '<span class="jobTitle d-none hidden visually-hidden"> No job title entered </span>';
 
 
 
@@ -275,7 +275,7 @@ let jobTitleString = (mentorDict.jobTitle.content) ?
 * */
 let companyString = (mentorDict.company.content) ?
 '<strong>Company: </strong>' + mentorDict.company.content + '<br>' :
-'<span class="company d-none hidden visually-hidden">No company entered</span>';
+'<span class="company d-none hidden visually-hidden"> No company entered </span>';
 
 
 
@@ -286,7 +286,7 @@ let companyString = (mentorDict.company.content) ?
 * */
 let industryString = (mentorDict.industry.content) ?
     '<strong>Industry: </strong>' + mentorDict.industry.content + '<br>' :
-    '<span class="industry d-none hidden visually-hidden">No industry entered</span>';
+    '<span class="industry d-none hidden visually-hidden"> No industry entered </span>';
 
 
 
@@ -297,7 +297,7 @@ let industryString = (mentorDict.industry.content) ?
 * */
 let mentorSinceString = (mentorDict.mentorSince.content) ?
 '<strong>Mentor Since: </strong>' + mentorDict.mentorSince.content + '<br>' :
-'<span class="mentorSince d-none hidden visually-hidden">No mentor time entered</span>';
+'<span class="mentorSince d-none hidden visually-hidden"> No mentor time entered </span>';
 
 
 
@@ -308,7 +308,7 @@ let mentorSinceString = (mentorDict.mentorSince.content) ?
 * */
 let studentTypeString = (mentorDict.menteeType.content) ?
     assignMentee(mentorDict.menteeType.content) :
-    '<span class="studentType d-none hidden visually-hidden">No student type entered</span>';
+    '<span class="studentType d-none hidden visually-hidden"> No student type entered </span>';
 
 
 
@@ -319,7 +319,7 @@ let studentTypeString = (mentorDict.menteeType.content) ?
 * */
 let mentorTypeString = (mentorDict.mentorType.content) ?
     assignMentor(mentorDict.mentorType.content) :
-    '<span class="mentorType d-none hidden visually-hidden">No mentor type entered</span>';
+    '<span class="mentorType d-none hidden visually-hidden"> No mentor type entered </span>';
 
 
 
@@ -330,7 +330,7 @@ let mentorTypeString = (mentorDict.mentorType.content) ?
 * */
 let linkedInString = (mentorDict.linkedIn.content) ?
     '<a href="' + mentorDict.linkedIn.content + '" target="_blank" title="LinkedIn Profile"><span class="fab fa-linkedin" aria-hidden="true"></span> Profile</a>' :
-    '<span class="linkedIn d-none hidden visually-hidden">No LinkedIn profile entered</span>';
+    '<span class="linkedIn d-none hidden visually-hidden"> No LinkedIn profile entered </span>';
 
 
 
@@ -341,7 +341,7 @@ let linkedInString = (mentorDict.linkedIn.content) ?
     * */
 let jobDescriptionString = (mentorDict.jobDescription.content) ?
 '<h3>Job Description</h3><p>' + mentorDict.jobDescription.content + '</p>' :
-'<span class="jobDescription d-none hidden visually-hidden">No job description entered</span>';
+'<span class="jobDescription d-none hidden visually-hidden"> No job description entered </span>';
 
 
 
@@ -352,7 +352,7 @@ let jobDescriptionString = (mentorDict.jobDescription.content) ?
 * */
 let companyDescriptionString = (mentorDict.companyDescription.content) ?
 '<h3>Company Description</h3><p>' + mentorDict.companyDescription.content + '</p>' :
-'<span class="companyDescription d-none hidden visually-hidden">No company description entered</span>';
+'<span class="companyDescription d-none hidden visually-hidden"> No company description entered </span>';
 
 
 
@@ -363,7 +363,7 @@ let companyDescriptionString = (mentorDict.companyDescription.content) ?
 * */
 let employmentHistoryString = (mentorDict.employmentHistory.content) ?
 '<h3>Employment History</h3><p>' + mentorDict.employmentHistory.content + '</p>' :
-'<span class="employmentHistory d-none hidden visually-hidden">No employment history entered</span>';
+'<span class="employmentHistory d-none hidden visually-hidden"> No employment history entered </span>';
 
 
 
@@ -374,7 +374,7 @@ let employmentHistoryString = (mentorDict.employmentHistory.content) ?
 * */
 let educationString = (mentorDict.education.content) ?
     '<h3>Education</h3><p>' + mentorDict.education.content + '</p>' :
-    '<span class="education d-none hidden visually-hidden">No education entered</span>';
+    '<span class="education d-none hidden visually-hidden"> No education entered </span>';
 
 
 
@@ -385,7 +385,7 @@ let educationString = (mentorDict.education.content) ?
 * */
 let civicInvolvementString = (mentorDict.civicInvolvement.content) ?
     '<h3>Civic Involvement</h3><p>' + mentorDict.civicInvolvement.content + '</p>' :
-    '<span class="civicInvolvement d-none hidden visually-hidden">No civic involvement entered</span>';
+    '<span class="civicInvolvement d-none hidden visually-hidden"> No civic involvement entered </span>';
 
 
 
@@ -396,7 +396,7 @@ let civicInvolvementString = (mentorDict.civicInvolvement.content) ?
 * */
 let objectivesString = (mentorDict.objectives.content) ?
     '<h3>Mentoring Objectives & Scope</h3><p>' + mentorDict.objectives.content + '</p>' :
-    '<span class="objectives d-none hidden visually-hidden">No objectives entered</span>';
+    '<span class="objectives d-none hidden visually-hidden"> No objectives entered </span>';
 
 
 
@@ -409,7 +409,7 @@ let yourMeetingsString = (mentorDict.yourMeetings.content) ?
     '<h3>When and where do you hold meetings with your students?</h3><p>' + mentorDict.yourMeetings.content + '</p>' :
     (mentorDict.whenAndWhere.content) ?
     '<h3>When and where do you hold meetings with your students?</h3><p>' + mentorDict.whenAndWhere.content + '</p>' :
-    '<span class="yourMeetings d-none hidden visually-hidden">No meetings info entered</span>';
+    '<span class="yourMeetings d-none hidden visually-hidden"> No meetings info entered </span>';
 
 
 
@@ -420,7 +420,7 @@ let yourMeetingsString = (mentorDict.yourMeetings.content) ?
 * */
 let additionalInfoString = (mentorDict.additionalInfo.content) ?
     '<h3>Additional Information</h3><p>' + mentorDict.additionalInfo.content + '</p>' :
-    '<span class="additionalInfo d-none hidden visually-hidden">No objectives entered</span>';
+    '<span class="additionalInfo d-none hidden visually-hidden"> No objectives entered </span>';
 
 
 
@@ -431,7 +431,7 @@ let additionalInfoString = (mentorDict.additionalInfo.content) ?
 * */
 let imageString = (mentorDict.imageId.content) ?
     imageTag(mentorDict.imageId.content) :
-    '<span class="articleImage d-none hidden visually-hidden">No valid image provided</span>';
+    '<span class="articleImage d-none hidden visually-hidden"> No valid image provided </span>';
 
 
 
