@@ -258,7 +258,7 @@ if (mentorDict.industry.content) descriptorParts.push(mentorDict.industry.conten
 if (mentorDict.mentorType.content) descriptorParts.push(mentorDict.mentorType.content);
 
 let srDescriptor = descriptorParts.length
-  ? ' — ' + descriptorParts.join(', ')
+  ? ' — Mentor profile, ' + descriptorParts.join(', ')
   : '';
 
 /***
