@@ -246,14 +246,43 @@ let mentorDict = {
 
 
 /***
+ *  Build hidden SR-only descriptor for H1
+ *  (Job Title, Company, Industry, Mentor Type)
+ *  — purely textual, no visual formatting
+ */
+let descriptorParts = [];
+
+if (mentorDict.jobTitle.content) descriptorParts.push(mentorDict.jobTitle.content);
+if (mentorDict.company.content) descriptorParts.push(mentorDict.company.content);
+if (mentorDict.industry.content) descriptorParts.push(mentorDict.industry.content);
+if (mentorDict.mentorType.content) descriptorParts.push(mentorDict.mentorType.content);
+
+let srDescriptor = descriptorParts.length
+  ? ' — ' + descriptorParts.join(', ')
+  : '';
+
+/***
+*  Name String (with hidden SR descriptor only)
+*/
+let nameString = (mentorDict.articleTitle.content)
+  ? '<h1 class="h2">' + mentorDict.articleTitle.content + '<span class="sr-only">' + srDescriptor + '</span></h1>'
+  : (mentorDict.firstName.content && mentorDict.lastName.content)
+  ? '<h1 class="h2">' + mentorDict.firstName.content + ' ' + mentorDict.lastName.content + '<span class="sr-only">' + srDescriptor + '</span></h1>'
+  : '<span class="d-none hidden visually-hidden"> No valid name entered </span>';
+
+
+
+
+
+/***
 *  Name String
 * 
 * */
-let nameString = (mentorDict.articleTitle.content) ?
-    '<h1 class="h2">' + mentorDict.articleTitle.content + '</h1>' :
-    (mentorDict.firstName.content && mentorDict.lastName.content) ?
-    '<h1 class="h2">' + mentorDict.firstName.content + ' ' + mentorDict.lastName.content + '</h1>' :
-    '<span class="d-none hidden visually-hidden"> No valid name entered </span>';
+// let nameString = (mentorDict.articleTitle.content) ?
+//     '<h1 class="h2">' + mentorDict.articleTitle.content + '</h1>' :
+//     (mentorDict.firstName.content && mentorDict.lastName.content) ?
+//     '<h1 class="h2">' + mentorDict.firstName.content + ' ' + mentorDict.lastName.content + '</h1>' :
+//     '<span class="d-none hidden visually-hidden"> No valid name entered </span>';
 
 
 
