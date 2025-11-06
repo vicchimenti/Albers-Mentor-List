@@ -252,10 +252,14 @@ let mentorDict = {
  */
 let descriptorParts = [];
 
-if (mentorDict.jobTitle.content) descriptorParts.push(mentorDict.jobTitle.content);
-if (mentorDict.company.content) descriptorParts.push(mentorDict.company.content);
-if (mentorDict.industry.content) descriptorParts.push(mentorDict.industry.content);
-if (mentorDict.mentorType.content) descriptorParts.push(mentorDict.mentorType.content);
+if (mentorDict.jobTitle.content)
+  descriptorParts.push('Title: ' + mentorDict.jobTitle.content);
+if (mentorDict.company.content)
+  descriptorParts.push('Company: ' + mentorDict.company.content);
+if (mentorDict.industry.content)
+  descriptorParts.push('Industry: ' + mentorDict.industry.content);
+if (mentorDict.mentorType.content)
+  descriptorParts.push('Mentor Type: ' + mentorDict.mentorType.content);
 
 let srDescriptor = descriptorParts.length ? ' — Mentor profile, ' + descriptorParts.join(', ') : '';
 
